@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { useForm } from 'react-hook-form'
+import closeIcon from "../assets/closeIcon.png";
 
 const defaultValues = {
     email: "",
@@ -9,7 +10,7 @@ const defaultValues = {
     birthday: ""
 }
 
-const Form = ({ createNewUser, updateInfo, updateUserById, setUpdateInfo }) => {
+const Form = ({ createNewUser, updateInfo, updateUserById, setUpdateInfo, setFormIsClose}) => {
 
     useEffect(() => {
         if (updateInfo) {
@@ -28,10 +29,17 @@ const Form = ({ createNewUser, updateInfo, updateUserById, setUpdateInfo }) => {
             createNewUser(data)
         }
         reset(defaultValues)
+        setFormIsClose(true)
     }
+
+    const handlecloseForm = () => {
+        setFormIsClose(true)
+    }
+
     return (
         <div className='formBox'>
             <form className="form" onSubmit={handleSubmit(submit)} >
+                <img onClick={handlecloseForm} className='formClose' src={closeIcon} alt="Close image" />
                 <h2 className='formTitle'>{updateInfo ? "Edit User" : "Register User"}</h2>
                 <div className='formContainer'>
                     <div className='formGroup'>

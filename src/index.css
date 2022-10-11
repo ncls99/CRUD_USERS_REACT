@@ -51,6 +51,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1;
+}
+
+.formDisable{
+  display: none;
 }
 
 .formBox {
@@ -68,7 +73,22 @@ body {
   border-radius: 10px;
   box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
   text-align: center;
+  position: relative;
 }
+
+.formClose{
+  position: absolute;
+  width: 30px;
+  right: 15px;
+  top: 15px;
+  cursor: pointer;  transition: transform 200ms ease;
+}
+
+.formClose:hover {
+  transform: scale(1.05);
+  transition: transform 200ms ease;
+}
+
 
 .formTitle {
   font-size: 2rem;
@@ -150,9 +170,9 @@ body {
 }
 
 .usersSection {
-  min-height: 800px;
+  max-height: 618px;
   background-color: #bfe2ff;    
-  max-width: 1270px;
+  max-width: 1200px;
   display: flex;
   flex-direction: row;
   margin-right: 15px;
@@ -162,6 +182,18 @@ body {
   gap: 10px;
   flex-wrap: wrap;
   padding: 20px;
+  border-radius: 10px;
+  overflow: scroll ;
+}
+
+.usersSection::-webkit-scrollbar {
+  width: 8px;     
+  height: 8px;    
+}
+
+.usersSection::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
 }
 
 .usersCard {
@@ -203,3 +235,24 @@ footer {
   width: 100%
 }
 
+.buttonBox{
+  background-color: white;
+  position: fixed;
+  cursor: pointer;
+  width: 60px;
+  bottom: 160px;
+  right: 362px;
+  transition:  transform 150ms ease, box-shadow 150ms ease;
+  border-radius: 50%;
+}
+
+.addButton {
+  width: 60px;
+}
+
+.buttonBox:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10 px #0005;
+  transition:  transform 150ms ease, box-shadow 150ms ease;
+
+}

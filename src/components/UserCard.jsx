@@ -1,12 +1,12 @@
 import React from 'react'
-import plusIcon from "../assets/plusIcon.png";
 import deleteIcon from "../assets/deleteIcon.png";
 import editIcon from "../assets/editIcon.png";
 
-const UserCard = ({ key, user, deleteUserById, setUpdateInfo }) => {
+const UserCard = ({ key, user, deleteUserById, setUpdateInfo, setFormIsClose}) => {
     
     const handleEdit = () => {
         setUpdateInfo(user)
+        setFormIsClose(false)
     }
 
     return (

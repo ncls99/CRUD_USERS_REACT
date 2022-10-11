@@ -4,13 +4,14 @@ import './App.css'
 import Form from './components/Form';
 import axios from 'axios';
 import UserCard from './components/UserCard';
+import plusIcon from "./assets/plusIcon.png";
 
 function App() {
   const baseURL = 'https://users-crud1.herokuapp.com'
 
   const [users, setUsers] = useState()
-  const { handleSubmit, register } = useForm()
   const [updateInfo, setUpdateInfo] = useState()
+  const [formIsClose, setFormIsClose] = useState(true)
 
   const getAllUsers = () => {
     const URL = `${baseURL}/users/`
@@ -52,14 +53,18 @@ function App() {
       .catch(err => console.log(err))
   }
 
+  const handleOpenForm = () => {
+    setFormIsClose(false)
+  }
   return (
     <div className="App">
-      <div className='formSection'>
+      <div className={`formSection ${formIsClose && 'formDisable'}`}>
         <Form
           createNewUser={createNewUser}
           updateInfo={updateInfo}
           setUpdateInfo={setUpdateInfo}
           updateUserById={updateUserById}
+          setFormIsClose={setFormIsClose}
         />
       </div>
       <div className='usersSection'>
@@ -71,10 +76,13 @@ function App() {
               user={user}
               deleteUserById={deleteUserById}
               setUpdateInfo={setUpdateInfo}
+              setFormIsClose={setFormIsClose}
             />
           ))
         }
-
+        <div className='buttonBox'>
+          <img onClick={handleOpenForm} className="addButton" src={plusIcon} alt="Plus image" />
+        </div>
       </div>
     </div>
   )
