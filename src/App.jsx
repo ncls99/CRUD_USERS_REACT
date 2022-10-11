@@ -55,6 +55,7 @@ function App() {
 
   const handleOpenForm = () => {
     setFormIsClose(false)
+    setUpdateInfo()
   }
   return (
     <div className="App">
@@ -68,7 +69,6 @@ function App() {
         />
       </div>
       <div className='usersSection'>
-
         {
           users?.map(user => (
             <UserCard
@@ -80,10 +80,10 @@ function App() {
             />
           ))
         }
-        <div className='buttonBox'>
-          <img onClick={handleOpenForm} className="addButton" src={plusIcon} alt="Plus image" />
-        </div>
       </div>
+          <div className='buttonBox'>
+            <img onClick={handleOpenForm} className="addButton" src={plusIcon} alt="Plus image" />
+          </div>
     </div>
   )
 }

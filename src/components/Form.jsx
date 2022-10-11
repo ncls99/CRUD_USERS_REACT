@@ -15,6 +15,8 @@ const Form = ({ createNewUser, updateInfo, updateUserById, setUpdateInfo, setFor
     useEffect(() => {
         if (updateInfo) {
             reset(updateInfo)
+        }else {
+            reset(defaultValues)
         }
     }, [updateInfo])
 

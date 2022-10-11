@@ -18,15 +18,13 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  /* background-color: #ab7fec; */
-  background-color: #96bfef;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='96' viewBox='0 0 60 96'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%230b91ef' fill-opacity='0.4'%3E%3Cpath d='M36 10a6 6 0 0 1 12 0v12a6 6 0 0 1-6 6 6 6 0 0 0-6 6 6 6 0 0 1-12 0 6 6 0 0 0-6-6 6 6 0 0 1-6-6V10a6 6 0 1 1 12 0 6 6 0 0 0 12 0zm24 78a6 6 0 0 1-6-6 6 6 0 0 0-6-6 6 6 0 0 1-6-6V58a6 6 0 1 1 12 0 6 6 0 0 0 6 6v24zM0 88V64a6 6 0 0 0 6-6 6 6 0 0 1 12 0v12a6 6 0 0 1-6 6 6 6 0 0 0-6 6 6 6 0 0 1-6 6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-  /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='96' viewBox='0 0 60 96'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23241d2e' fill-opacity='0.4'%3E%3Cpath d='M36 10a6 6 0 0 1 12 0v12a6 6 0 0 1-6 6 6 6 0 0 0-6 6 6 6 0 0 1-12 0 6 6 0 0 0-6-6 6 6 0 0 1-6-6V10a6 6 0 1 1 12 0 6 6 0 0 0 12 0zm24 78a6 6 0 0 1-6-6 6 6 0 0 0-6-6 6 6 0 0 1-6-6V58a6 6 0 1 1 12 0 6 6 0 0 0 6 6v24zM0 88V64a6 6 0 0 0 6-6 6 6 0 0 1 12 0v12a6 6 0 0 1-6 6 6 6 0 0 0-6 6 6 6 0 0 1-6 6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); */
+  background-color: #ab7fec;
+  /* background-color: #96bfef;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='96' viewBox='0 0 60 96'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%230b91ef' fill-opacity='0.4'%3E%3Cpath d='M36 10a6 6 0 0 1 12 0v12a6 6 0 0 1-6 6 6 6 0 0 0-6 6 6 6 0 0 1-12 0 6 6 0 0 0-6-6 6 6 0 0 1-6-6V10a6 6 0 1 1 12 0 6 6 0 0 0 12 0zm24 78a6 6 0 0 1-6-6 6 6 0 0 0-6-6 6 6 0 0 1-6-6V58a6 6 0 1 1 12 0 6 6 0 0 0 6 6v24zM0 88V64a6 6 0 0 0 6-6 6 6 0 0 1 12 0v12a6 6 0 0 1-6 6 6 6 0 0 0-6 6 6 6 0 0 1-6 6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='96' viewBox='0 0 60 96'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23241d2e' fill-opacity='0.4'%3E%3Cpath d='M36 10a6 6 0 0 1 12 0v12a6 6 0 0 1-6 6 6 6 0 0 0-6 6 6 6 0 0 1-12 0 6 6 0 0 0-6-6 6 6 0 0 1-6-6V10a6 6 0 1 1 12 0 6 6 0 0 0 12 0zm24 78a6 6 0 0 1-6-6 6 6 0 0 0-6-6 6 6 0 0 1-6-6V58a6 6 0 1 1 12 0 6 6 0 0 0 6 6v24zM0 88V64a6 6 0 0 0 6-6 6 6 0 0 1 12 0v12a6 6 0 0 1-6 6 6 6 0 0 0-6 6 6 6 0 0 1-6 6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
 .cardContainer {
-  /* background-color: #e5e5f7; */
-  background-color: #bfe2ff;
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -67,7 +65,7 @@ body {
 .form {
   background-color: #fff;
   margin: auto;
-  width: 400px;
+  width: 290px;
   max-width: 400px;
   padding: 4.5em 3em;
   border-radius: 10px;
@@ -171,7 +169,7 @@ body {
 
 .usersSection {
   max-height: 618px;
-  background-color: #bfe2ff;    
+  background-color: #d3bfff;   
   max-width: 1200px;
   display: flex;
   flex-direction: row;
@@ -184,6 +182,7 @@ body {
   padding: 20px;
   border-radius: 10px;
   overflow: scroll ;
+  position: relative;
 }
 
 .usersSection::-webkit-scrollbar {
@@ -194,6 +193,10 @@ body {
 .usersSection::-webkit-scrollbar-thumb {
   background: #ccc;
   border-radius: 4px;
+}
+
+.usersSection::-webkit-scrollbar-corner{
+  display: none;
 }
 
 .usersCard {
@@ -237,22 +240,26 @@ footer {
 
 .buttonBox{
   background-color: white;
-  position: fixed;
+  margin-top: 40px;
+  margin-right: 40px;
+  position: sticky;
   cursor: pointer;
   width: 60px;
-  bottom: 160px;
-  right: 362px;
+  aspect-ratio: 1;
+  top: 500px;
+  left: 95%;
   transition:  transform 150ms ease, box-shadow 150ms ease;
   border-radius: 50%;
 }
 
 .addButton {
-  width: 60px;
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
 }
 
 .buttonBox:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 10 px #0005;
+  box-shadow: 0 0 10px #0005;
   transition:  transform 150ms ease, box-shadow 150ms ease;
-
 }

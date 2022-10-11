@@ -1,6 +1,6 @@
 import React from 'react'
 import deleteIcon from "../assets/deleteIcon.png";
-import editIcon from "../assets/editIcon.png";
+import editIcon from "../assets/EditIcon.png";
 
 const UserCard = ({ key, user, deleteUserById, setUpdateInfo, setFormIsClose}) => {
     
