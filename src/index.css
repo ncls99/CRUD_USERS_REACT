@@ -191,7 +191,7 @@ body {
 }
 
 .usersSection::-webkit-scrollbar-thumb {
-  background: #ccc;
+  background: rgb(82, 80, 80);
   border-radius: 4px;
 }
 
