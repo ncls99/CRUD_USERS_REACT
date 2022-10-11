@@ -169,8 +169,10 @@ body {
 
 .usersSection {
   max-height: 618px;
+  min-height: 618px;
   background-color: #d3bfff;   
   max-width: 1200px;
+  min-width: 1200px;
   display: flex;
   flex-direction: row;
   margin-right: 15px;
